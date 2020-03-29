@@ -9,7 +9,7 @@
 }
 #derulant{
 	display:flex;
-  flex-wrap:nowrap;
+	flex-wrap:wrap;
 	position: absolute;
 	animation-name:go;
 	animation-direction:alternate;
@@ -19,12 +19,12 @@
 }
 #derulant>*{
 	flex-shrink: 0;
-  position:relative;
+	position:relative;
 }
 #container_animatie figure:hover figcaption{
   position:absolute;
   bottom:0;
-  width:100%;
+  width:auto;
   height:auto;
   font-size:1.5em;
   background:rgba(200,200,200,0.5);
@@ -37,17 +37,17 @@
 }
 @keyframes go{
 	0%{
-    	left:0px;
+    	top:0px;
     }
 	100%{
-		left:-600%;
+		top:-500%;
 	}
 }
 #container_animatie{
 	position:relative;
 	overflow:hidden;
-  border:1px solid black;
-  width:400px;
-  height:300px;
-  box-sizing:content-box;
+	border:1px solid black;
+	width:400px;
+	height:300px;
+	box-sizing:content-box;
 }
