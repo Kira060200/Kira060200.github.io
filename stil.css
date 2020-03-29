@@ -19,9 +19,15 @@
 			color:grey;
 			font-style:italic;
 	}
+	h2,h3{
+		padding-left:10px;
+	}
 	html{
 		font-size: 16px;
 		}
+	section{
+		padding:20px;
+	}
 		
 	*{
 		margin:0px;
