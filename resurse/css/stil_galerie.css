@@ -1,17 +1,20 @@
 	body{
-		background-color:lightgreen;
+		background-image: url('../imagini/bk1.jpg');
+		background-repeat: repeat, repeat;
+		color:yellow;
+		font-size:18px;
 	}
 
 	div
 	{
-		background:lightblue;
+		background:lightgreen;
 		color:green;
 		transition: color 2s linear; 
 		font-size:20px
 	}
 	div:hover
 	{
-		background:blue;
+		background:darkgreen;
 		color:black;
 		transition: all 2s linear;
 		font-size:30px;

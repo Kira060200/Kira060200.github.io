@@ -1,0 +1,166 @@
+	body{
+		background-image: url('../imagini/bk2.jpg');
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+
+	div
+	{
+		background:lightgreen;
+		color:green;
+		transition: color 2s linear; 
+		font-size:20px
+	}
+	div:hover
+	{
+		background:darkgreen;
+		color:black;
+		transition: all 2s linear;
+		font-size:30px;
+	}
+	h1{
+			color:grey;
+			font-style:italic;
+	}
+	h2,h3{
+		padding-left:10px;
+	}
+	html{
+		font-size: 16px;
+		}
+	section,footer{
+		padding:20px;
+	}
+		
+	*{
+		margin:0px;
+		padding:0px;
+		text-indent:0px;
+	}
+	main{
+		display:grid;
+		grid-template-columns:repeat(4,1fr);
+		grid-template-areas:"gr-magazin gr-magazin gr-magazi gr-orar";
+	}
+	#magazin{
+		grid-area:gr-magazin;
+	}
+	#orar{
+		grid-area:gr-orar;
+	}
+	p.text{
+		width:60%;
+		float:left;
+	}
+	figure.img-wrap{
+		width:40%;
+		float:left;
+	}
+
+	figure.img-wrap>img{
+		width:100%;
+		height:auto;
+		
+	}
+
+	nav{
+		width:100%;
+		position:fixed;
+	}
+
+	ul.menu>li, ul.menu>li>ul.submenu>li{
+		display:block;
+		
+		font-size:1.2rem;
+		font-weight:bold;
+		height:1.2rem;
+		line-height:1.2rem;
+		text-align:center;		
+		list-style-type:none;
+		overflow:hidden;
+	}
+	ul.menu>li{
+	 float:left;
+	 width:33.33%;
+	}
+	ul.submenu>li{
+	 width:100%;
+	}
+	ul.menu>li>a,ul.menu>li>div,ul.submenu>li>a{
+		display:block;
+		height:	100%;
+		text-decoration:none;
+		color:yellow;
+	}
+	ul.menu>li:nth-of-type(even) a, ul.submenu>li:nth-of-type(even) div{
+		background:darkred;
+	}
+	ul.menu>li:nth-of-type(odd) a, ul.submenu>li:nth-of-type(odd) div{
+		background:lightblue;
+	}
+
+	ul.menu>li>ul.submenu{
+		position:relative;
+		top:0px;
+	}
+
+	ul.menu>li>ul.submenu>li
+	{
+		border-top:1px solid black;
+	}
+	ul.menu>li>ul.submenu>li:last-child
+	{
+		border-bottom:1px solid black;
+	}
+
+	ul.menu>li>a:hover, ul.submenu>li>a:hover{
+		background:red;
+	}
+	ul.menu>li:hover{
+		overflow:visible;
+	}
+	
+	
+	@media screen and (min-width:400px) and (max-width:700px){
+		p.text{
+		float:none;
+		width:100%;
+		}
+		figure.img-wrap{
+		width:100%;
+		}
+		
+		ul.menu>li{
+		 width:25%;
+		}
+
+		ul.menu>li:hover ul.submenu{
+			width:100vw;
+			position:absolute;
+			left:0px;
+			top:1.2rem;
+			border-top:1px solid magenta;
+			border-bottom:1px solid black;
+		}
+		
+		ul.menu>li:nth-of-type(even):hover ul.submenu{
+				background:pink;
+		}
+		ul.menu>li:nth-of-type(odd):hover ul.submenu{
+				background:lightblue;
+		}
+		ul.menu>li:hover ul.submenu>li{
+			float:left;
+			width:15%;
+			border:none;
+		}
+	}
+	@media screen and (max-width:400px){
+		p.text{
+		float:none;
+		width:100%;
+		}
+		figure.img-wrap{
+		width:100%;
+		}
+	}
