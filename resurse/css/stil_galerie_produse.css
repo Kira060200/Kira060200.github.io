@@ -1,6 +1,6 @@
 div.galerie {
-  all: initial;
-  all: unset;
+  fill: initial;
+  fill: unset;
   float: left;
   width: 200px;
   margin: 5px;
@@ -19,5 +19,4 @@ div.galerie img {
 div.desc {
   padding: 15px;
   text-align: center;
-  text-weight: bold;
 }
