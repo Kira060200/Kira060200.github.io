@@ -142,10 +142,6 @@
 			border-top:1px solid magenta;
 			border-bottom:1px solid black;
 		}
-		
-		ul.menu>li:nth-of-type(even):hover ul.submenu{
-				background:pink;
-		}
 		ul.menu>li:nth-of-type(odd):hover ul.submenu{
 				background:lightblue;
 		}
