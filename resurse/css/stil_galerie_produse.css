@@ -1,0 +1,23 @@
+div.galerie {
+  all: initial;
+  all: unset;
+  float: left;
+  width: 200px;
+  margin: 5px;
+  border: 2px solid #ccc;
+}
+
+div.galerie:hover {
+  border: 3px solid #775500;
+}
+
+div.galerie img {
+  width: 200px;
+  height:170px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  text-weight: bold;
+}
